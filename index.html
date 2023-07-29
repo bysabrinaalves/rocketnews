@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Londrina+Shadow&family=Work+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>RocketNews</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="background">
+        <img src="./assets/logo.svg" alt="logo da rocketnews" />
+
+        <div class="content">
+          <h3>atualize ideias e informações em 5 minutos.</h3>
+
+          <p>
+            tudo que você precisa saber para começar seu dia bem e informado
+          </p>
+
+          <span>
+            noticias sobre o universo Rocketseat, e tudo o que precisa para
+            começar o dia melhor.
+            <br />
+            perfeito para se preparar para codar ☕
+          </span>
+        </div>
+
+        <!--ALTERAR O SUBMISSION PARA IR PARA OUTRA PÁGINA QUANDO CLICAR EM ENVIAR-->
+        <form method="get" action="./subscribe.html">
+          <p>Insira seu e-mail:</p>
+          <div class="green"></div>
+
+          <input
+            type="email"
+            name="email"
+            id="e-mail"
+            placeholder="oi@rocketseat.com"
+          />
+          <input type="submit" value="" id="submit" />
+          <p class="error-text"></p>
+        </form>
+
+        <div class="reading">
+          <a href="https://blog.rocketseat.com.br/">
+            Saiba mais
+            <ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="image"></div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

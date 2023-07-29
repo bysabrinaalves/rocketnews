@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+  --error-email-color: hsl(0, 100%, 46%);
+}
+
+/* background */
+.container {
+  display: flex;
+  height: 100vh;
+  color: var(--text-color);
+}
+
+.background {
+  flex: 1;
+  background: var(--body-bg-color);
+}
+
+.image {
+  flex: 1;
+  background-image: url(./assets/read_news.jpg);
+  background-size: cover;
+  background-position: 70%;
+}
+
+/* logo */
+img {
+  width: 389px;
+  height: 94px;
+  margin: 50px 0 0 30px;
+}
+
+/* conteúdo */
+.content {
+  margin: 92px 0 0 30px;
+}
+
+.content h3 {
+  font-family: "Work Sans";
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin: 0 0 8px;
+}
+
+.content p {
+  font-family: "Spartan";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0 0 9px;
+}
+
+.content span {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 19px;
+}
+
+/* email */
+form {
+  margin: 50px 0 0 30px;
+  color: var(--form-color);
+}
+
+form p {
+  font-family: "Spartan";
+  font-size: 14px;
+  font-weight: 700;
+
+  margin: 116px 35px 38px 0;
+}
+
+.error-email {
+  border: 2px solid var(--error-email-color) !important;
+  border-left: 10px solid var(--title-color) !important;
+}
+
+.error-text {
+  color: var(--error-email-color);
+  font-weight: 700;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  position: absolute;
+}
+
+.green {
+  border: solid 3px var(--title-color);
+  display: inline-flex;
+  height: 48px;
+  width: 5px;
+}
+
+#e-mail {
+  padding-left: 10px;
+  position: absolute;
+  min-width: 40%;
+  height: 48px;
+}
+
+#submit {
+  position: absolute;
+  background: #8257e5 url(./assets/send.svg) no-repeat center;
+  border: none;
+  width: 48px;
+  height: 48px;
+  padding: 0.75rem;
+  cursor: pointer;
+  margin-left: 40%;
+}
+
+/* leitura */
+.reading {
+  margin: 2px 30px 0;
+  display: flex;
+}
+
+.reading .ion-icon {
+  font-size: 16px;
+}
+
+.reading a {
+  text-decoration: none;
+  color: var(--bg-button-color);
+
+  font-family: "Spartan";
+  font-weight: 700;
+  font-size: 14px;
+
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .background {
+    flex: 100%;
+    background: var(--body-bg-color);
+  }
+
+  /* logo */
+  img {
+    margin: 30px 0 0 20px;
+  }
+
+  /* conteúdo */
+  .content {
+    margin: 92px 0 0 20px;
+  }
+
+  .content p {
+    font-size: 17px;
+
+    margin: 10px 0 14px 0;
+  }
+
+  .content span {
+    font-size: 15px;
+
+    line-height: 19px;
+  }
+
+  /* email */
+  form {
+    margin: 50px 0 0 20px;
+    color: var(--form-color);
+  }
+
+  #e-mail {
+    width: 80%;
+  }
+
+  #submit {
+    margin-left: 80%;
+    width: 49px;
+    height: 49px;
+  }
+
+  /* leitura */
+  .reading {
+    margin: 50px 0 0 20px;
+  }
+}
+.error-text {
+  position: relative;
+  margin-bottom: 1.5rem;
+}

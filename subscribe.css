@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+
+.align {
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  margin: 100px 0 160px 0;
+  width: 389px;
+  height: 94px;
+}
+
+body {
+  background-color: #121214;
+  height: 100vh;
+  color: #8257e5;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 50px;
+}
